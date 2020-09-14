@@ -47,7 +47,7 @@
 }
 
 .main-slider__title {
-    color: #ffffff;
+    color: $white;
     font-size: 61px;
     line-height: 54px;
     margin: 0 0 20px 0;
@@ -67,7 +67,7 @@
 
 .main-slider__description {
     max-width: 402px;
-    color: #ffffff;
+    color: $white;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -87,10 +87,10 @@
 .main-slider__button {
     max-width: 113px;
     height: 40px;
-    color: #ffffff;
+    color: $white;
     font-size: 27px;
     line-height: 19px;
-    border-color: #ffffff;
+    border-color: $white;
     background-color: $blue;
 
     @media (max-width: 767px) {
@@ -145,7 +145,7 @@
     font-size: 0;
     width: 9px;
     height: 9px;
-    background-color: #ffffff;
+    background-color: $white;
     border: none;
     border-radius: 50%;
     margin: 0 7px;

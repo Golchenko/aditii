@@ -27,7 +27,7 @@
 }
 
 .footer-top__title {
-    color: #ffffff;
+    color: $white;
     font-size: 27px;
     font-weight: 400;
     line-height: 27px;
@@ -53,7 +53,7 @@
         content: "";
         width: 0;
         height: 0;
-        border-top: 10px solid #ffffff;
+        border-top: 10px solid $white;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
     }
@@ -80,7 +80,7 @@
 
 .footer-top__link {
     text-decoration: none;
-    color: #ffffff;
+    color: $white;
     font-family: "Open Sans";
     font-size: 15px;
     font-weight: 400;
@@ -94,7 +94,7 @@
 
 .footer-bottom__copyright {
     text-align: center;
-    color: #ffffff;
+    color: $white;
     font-family: "Open Sans";
     font-size: 15px;
     font-weight: 400;

@@ -8,7 +8,7 @@
 .featured__title {
     line-height: 66px;
     font-size: 31px;
-    color: #ffffff;
+    color: $white;
     font-weight: 400;
 }
 
@@ -23,7 +23,7 @@
     width: 253px;
     height: 260px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
+    background-color: $white;
     margin: 0 30px;
     margin-bottom: 45px;
     border-bottom: 5px solid #3cc395;
@@ -63,7 +63,7 @@
     width: 74px;
     height: 34px;
     background-color: #3cc395;
-    color: #ffffff;
+    color: $white;
     text-decoration: none;
     display: inline-block;
     line-height: 34px;

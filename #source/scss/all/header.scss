@@ -3,6 +3,12 @@
     justify-content: space-between;
     align-items: center;
     height: 83px;
+    position: relative;
+    flex-wrap: wrap;
+
+    @media (max-width: 460px) {
+        height: 120px;
+    }
 }
 
 .header-top__logo {
@@ -12,6 +18,7 @@
 
 .header-top__search {
     position: relative;
+    margin: 0 auto;
 
     &::after {
         position: absolute;
@@ -21,10 +28,11 @@
         width: 22px;
         height: 22px;
         background-image: url(/img/ico-search.png);
+        background-repeat: no-repeat;
     }
 
     @media (max-width: 460px) {
-        display: none;
+        order: 4;
     }
 }
 
@@ -44,6 +52,10 @@
 
     @media (max-width: 580px) {
         width: 160px;
+    }
+
+    @media (max-width: 460px) {
+        width: 246px;
     }
 }
 
@@ -71,7 +83,6 @@
         margin-left: auto;
         margin-right: 20px;
     }
-
 }
 
 .cart__total-price {
@@ -188,7 +199,7 @@
 .header-nav__link {
     display: block;
     text-decoration: none;
-    color: #ffffff;
+    color: $white;
     font-size: 21px;
     line-height: 21px;
 
@@ -200,6 +211,6 @@
 .header-nav__separator {
     width: 2px;
     height: 18px;
-    background-color: #ffffff;
+    background-color: $white;
     margin-top: 15px;
 }

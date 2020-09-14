@@ -462,6 +462,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 83px;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-top__logo {
@@ -471,6 +474,7 @@ body {
 
 .header-top__search {
   position: relative;
+  margin: 0 auto;
 }
 
 .header-top__search::after {
@@ -481,6 +485,7 @@ body {
   width: 22px;
   height: 22px;
   background-image: url(/img/ico-search.png);
+  background-repeat: no-repeat;
 }
 
 .header-top__input {
@@ -1193,8 +1198,18 @@ body {
 }
 
 @media (max-width: 460px) {
+  .header-top {
+    height: 120px;
+  }
+
   .header-top__search {
-    display: none;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+  .header-top__input {
+    width: 246px;
   }
 
   .cart {
