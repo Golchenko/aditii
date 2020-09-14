@@ -1,0 +1,158 @@
+.main-slider {
+    width: 100%;
+    background-color: $blue;
+    margin-bottom: 25px;    
+}
+
+.main-slider__columns {
+    outline: none;
+}
+
+.main-slider__columns {
+    display: flex;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.main-slider__left-column {
+    width: 440px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 70px;
+
+    @media (max-width: 600px) {
+        padding-top: 20px;
+    }
+}
+
+.main-slider__image {
+    display: block;
+    margin: 0 auto;
+
+    @media (max-width: 767px) {
+        max-width: 80%;
+    }
+}
+
+.main-slider__right-column {
+    padding-top: 80px;
+    max-width: 400px;
+
+    @media (max-width: 600px) {
+        padding-top: 20px;
+    }
+}
+
+.main-slider__title {
+    color: #ffffff;
+    font-size: 61px;
+    line-height: 54px;
+    margin: 0 0 20px 0;
+
+    @media (max-width: 767px) {
+        font-size: 54px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 44px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 32px;
+    }
+}
+
+.main-slider__description {
+    max-width: 402px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 0 25px 0;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.main-slider__button {
+    max-width: 113px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 27px;
+    line-height: 19px;
+    border-color: #ffffff;
+    background-color: $blue;
+
+    @media (max-width: 767px) {
+        font-size: 19px;
+    }
+
+    @media (max-width: 600px) {
+        margin: 0 auto;
+    }
+}
+
+.main-slider__list {
+    @include reset-list;
+}
+
+.slider__list {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slider__item {
+    outline: none;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.slick-dots li {
+    @include reset-list;
+}
+
+.slick-dots li.slick-active button {
+    opacity: 0.51;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    margin: 0 7px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $grey;
+    }
+}
