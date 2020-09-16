@@ -518,6 +518,7 @@ body {
   font-size: 33px;
   line-height: 33px;
   padding-left: 17px;
+  margin: 0;
 }
 
 .header-top__burger {
